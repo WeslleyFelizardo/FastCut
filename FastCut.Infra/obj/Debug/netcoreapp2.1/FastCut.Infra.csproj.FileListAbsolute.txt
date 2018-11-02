@@ -1,0 +1,9 @@
+D:\Projects\FastCut\api\FastCut\FastCut.Infra\bin\Debug\netcoreapp2.1\FastCut.Infra.deps.json
+D:\Projects\FastCut\api\FastCut\FastCut.Infra\bin\Debug\netcoreapp2.1\FastCut.Infra.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Infra\bin\Debug\netcoreapp2.1\FastCut.Infra.pdb
+D:\Projects\FastCut\api\FastCut\FastCut.Infra\obj\Debug\netcoreapp2.1\FastCut.Infra.csprojAssemblyReference.cache
+D:\Projects\FastCut\api\FastCut\FastCut.Infra\obj\Debug\netcoreapp2.1\FastCut.Infra.csproj.CoreCompileInputs.cache
+D:\Projects\FastCut\api\FastCut\FastCut.Infra\obj\Debug\netcoreapp2.1\FastCut.Infra.AssemblyInfoInputs.cache
+D:\Projects\FastCut\api\FastCut\FastCut.Infra\obj\Debug\netcoreapp2.1\FastCut.Infra.AssemblyInfo.cs
+D:\Projects\FastCut\api\FastCut\FastCut.Infra\obj\Debug\netcoreapp2.1\FastCut.Infra.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Infra\obj\Debug\netcoreapp2.1\FastCut.Infra.pdb
