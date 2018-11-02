@@ -6,3 +6,4 @@ D:\Projects\FastCut\api\FastCut\FastCut.Shared\obj\Debug\netcoreapp2.1\FastCut.S
 D:\Projects\FastCut\api\FastCut\FastCut.Shared\obj\Debug\netcoreapp2.1\FastCut.Shared.AssemblyInfo.cs
 D:\Projects\FastCut\api\FastCut\FastCut.Shared\obj\Debug\netcoreapp2.1\FastCut.Shared.dll
 D:\Projects\FastCut\api\FastCut\FastCut.Shared\obj\Debug\netcoreapp2.1\FastCut.Shared.pdb
+D:\Projects\FastCut\api\FastCut\FastCut.Shared\obj\Debug\netcoreapp2.1\FastCut.Shared.csprojAssemblyReference.cache
