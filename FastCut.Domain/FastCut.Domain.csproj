@@ -11,4 +11,8 @@
     <Folder Include="Repositories\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FastCut.Shared\FastCut.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

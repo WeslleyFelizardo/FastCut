@@ -7,3 +7,6 @@ D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.1\FastCut.D
 D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.1\FastCut.Domain.AssemblyInfo.cs
 D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.1\FastCut.Domain.dll
 D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.1\FastCut.Domain.pdb
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\bin\Debug\netcoreapp2.1\FastCut.Shared.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\bin\Debug\netcoreapp2.1\FastCut.Shared.pdb
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.1\FastCut.Domain.csproj.CopyComplete

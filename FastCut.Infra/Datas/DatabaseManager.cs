@@ -13,7 +13,7 @@ namespace FastCut.Infra.Datas
         /// The Best "Real-life" solutions would be creating 'RootDataBase' with 
         /// all Tenants Parameters/Options like: TenantName, DatabaseName, other configuration.
         /// </summary>
-        private readonly IList<Tenant> inquilinos = new List<Tenant>
+        private readonly IList<Tenant> _tenants = new List<Tenant>
         {
             new Tenant()
             {
@@ -37,7 +37,7 @@ namespace FastCut.Infra.Datas
 
         public Tenant GetTenantById(string tenantId)
         {
-            var tenant = this.inquilinos.FirstOrDefault(i => i.Id == Guid.Parse(tenantId));
+            var tenant = this._tenants.FirstOrDefault(i => i.Id == Guid.Parse(tenantId));
 
             if (tenant == null)
             {

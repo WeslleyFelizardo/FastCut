@@ -590,6 +590,9 @@
         }
       },
       "FastCut.Domain/1.0.0": {
+        "dependencies": {
+          "FastCut.Shared": "1.0.0"
+        },
         "runtime": {
           "FastCut.Domain.dll": {}
         }

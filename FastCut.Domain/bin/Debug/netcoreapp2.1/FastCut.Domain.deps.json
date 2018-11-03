@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "FastCut.Domain/1.0.0": {
+        "dependencies": {
+          "FastCut.Shared": "1.0.0"
+        },
         "runtime": {
           "FastCut.Domain.dll": {}
+        }
+      },
+      "FastCut.Shared/1.0.0": {
+        "runtime": {
+          "FastCut.Shared.dll": {}
         }
       }
     }
   },
   "libraries": {
     "FastCut.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FastCut.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

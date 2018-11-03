@@ -8,7 +8,7 @@ using System.Text;
 
 namespace FastCut.Infra.Datas
 {
-    public class ContextFactory
+    public class ContextFactory : IContextFactory
     {
         private const string TenantIdFieldName = "TenantId";
         private const string DatabaseFieldKeyword = "Database";
