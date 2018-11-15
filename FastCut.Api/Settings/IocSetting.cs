@@ -1,5 +1,8 @@
 ﻿
+using FastCut.Domain.Repositories;
 using FastCut.Infra.Datas;
+using FastCut.Infra.Repositories;
+using FastCut.Shared.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,16 +19,13 @@ namespace FastCut.Api.Settings
         {
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            //services.AddScoped(typeof(IRepositorioSincrono<>), typeof(RepositorioBase<>));
-            //services.AddScoped(typeof(IRepositorioAssincrono<>), typeof(RepositorioBase<>));
-            //services.AddScoped(typeof(IRepositorioColaborador), typeof(RepositorioColaborador));
-            //services.AddScoped<IDeviceViewModelValidationRules, DeviceViewModelValidationRules>();
-
-            //services.AddTransient<IDeviceService, DeviceService>();
-            //services.AddTransient<IDeviceValidationService, DeviceValidationService>();
+            services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
+            services.AddScoped(typeof(IServiceRepository), typeof(ServiceRepository));
 
             services.AddTransient<IDatabaseManager, DatabaseManager>();
             services.AddTransient<IContextFactory, ContextFactory>();
+            
+            //services.AddScoped<IDbContext>(provider => provider.GetService<FastCutContext>());
 
             //services.AddTransient<IUnitOfWork, UnitOfWork>();
         }

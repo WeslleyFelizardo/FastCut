@@ -7,6 +7,8 @@ namespace FastCut.Infra.Datas
 {
     public interface IContextFactory
     {
-        DbContext DbContexto { get; }
+        DbContext DbContext { get; }
+
+        void InitializeDatabases();
     }
 }

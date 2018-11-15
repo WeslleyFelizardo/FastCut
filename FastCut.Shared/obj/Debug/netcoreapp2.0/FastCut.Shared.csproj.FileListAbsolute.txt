@@ -1,0 +1,9 @@
+D:\Projects\FastCut\api\FastCut\FastCut.Shared\bin\Debug\netcoreapp2.0\FastCut.Shared.deps.json
+D:\Projects\FastCut\api\FastCut\FastCut.Shared\bin\Debug\netcoreapp2.0\FastCut.Shared.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Shared\bin\Debug\netcoreapp2.0\FastCut.Shared.pdb
+D:\Projects\FastCut\api\FastCut\FastCut.Shared\obj\Debug\netcoreapp2.0\FastCut.Shared.csprojAssemblyReference.cache
+D:\Projects\FastCut\api\FastCut\FastCut.Shared\obj\Debug\netcoreapp2.0\FastCut.Shared.csproj.CoreCompileInputs.cache
+D:\Projects\FastCut\api\FastCut\FastCut.Shared\obj\Debug\netcoreapp2.0\FastCut.Shared.AssemblyInfoInputs.cache
+D:\Projects\FastCut\api\FastCut\FastCut.Shared\obj\Debug\netcoreapp2.0\FastCut.Shared.AssemblyInfo.cs
+D:\Projects\FastCut\api\FastCut\FastCut.Shared\obj\Debug\netcoreapp2.0\FastCut.Shared.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Shared\obj\Debug\netcoreapp2.0\FastCut.Shared.pdb

@@ -24,7 +24,19 @@ namespace FastCut.Infra.Datas
             this._connectionOptions = connectionOptions;
             this._databaseManager = databaseManager;
         }
-        public DbContext DbContexto => new FastCutContext(ChangeDatabaseNameInConnectionString(this.TenantId).Options);
+        public DbContext DbContext => new FastCutContext(ChangeDatabaseNameInConnectionString(this.TenantId).Options);
+
+        public void InitializeDatabases()
+        {
+            foreach (var tenant in _databaseManager.GetAllTenants())
+            {
+                var databaseConfiguration = ChangeDatabaseNameInConnectionString(tenant.Id.ToString());
+
+                var context = new FastCutContext(databaseConfiguration.Options);
+
+                context.Database.EnsureCreated();
+            }
+        }
 
         // Gets tenant id from HTTP header
         private string TenantId
@@ -43,7 +55,7 @@ namespace FastCut.Infra.Datas
                 return tenantId;
             }
         }
-        private SqlConnectionStringBuilder MudarBancoDeDadosNaStringConexao()
+        private SqlConnectionStringBuilder ChangeNameDatabase()
         {
             var sqlConnectionBuilder = new SqlConnectionStringBuilder(this._connectionOptions.Value.DefaultConnection);
             var tenant = this._databaseManager.GetTenantById(this.TenantId);
@@ -60,7 +72,7 @@ namespace FastCut.Infra.Datas
 
         private DbContextOptionsBuilder<FastCutContext> ChangeDatabaseNameInConnectionString(string tenantId)
         {
-            ValidateDefaultConnection();
+            //ValidateDefaultConnection();
 
             // 1. Create Connection String Builder using Default connection string
             var sqlConnectionBuilder = new SqlConnectionStringBuilder(this._connectionOptions.Value.DefaultConnection);
@@ -75,7 +87,7 @@ namespace FastCut.Infra.Datas
             var contextOptionsBuilder = new DbContextOptionsBuilder<FastCutContext>();
 
             contextOptionsBuilder.UseSqlServer(sqlConnectionBuilder.ConnectionString);
-
+            
 
             return contextOptionsBuilder;
         }

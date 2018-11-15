@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using FastCut.Api.Settings;
+using FastCut.Infra.Datas;
 using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -22,6 +23,8 @@ namespace FastCut.Api
                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            //contextFactory.InitializeDatabases();
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -36,6 +39,8 @@ namespace FastCut.Api
             OptionsSetting.ConfigureService(services, Configuration);
             EntityFrameworkSetting.ConfigureService(services, Configuration);
             IocSetting.ConfigureService(services, Configuration);
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

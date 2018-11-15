@@ -47,7 +47,7 @@ namespace FastCut.Api.Settings
                 {
                     Flow = "implicit", // just get token via browser (suitable for swagger SPA)
                     AuthorizationUrl = "http://localhost:61618/connect/authorize",
-                    Scopes = new Dictionary<string, string> { { "fastcut_api", "FastCut API - full access" } },
+                    Scopes = new Dictionary<string, string> { { "fastcut_api", "FastCut API - full access" } , { "node_api", "Api em Node" } },
 
 
                 });

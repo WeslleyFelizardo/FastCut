@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FastCut.Domain\FastCut.Domain.csproj" />
     <ProjectReference Include="..\FastCut.Infra\FastCut.Infra.csproj" />
   </ItemGroup>
 

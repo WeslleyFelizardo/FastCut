@@ -15,14 +15,8 @@ namespace FastCut.Api.Settings
     {
         public static void ConfigureService(IServiceCollection services, IConfigurationRoot configuration)
         {
-            string connectionString = configuration.GetConnectionString("DefaultConnection");
-
-            // Entity framework configuration
-
-            services.AddDbContext<FastCutContext>(options =>
-                options.UseSqlServer(connectionString));
-
-            services.AddScoped<FastCutContext>();
+            services.AddEntityFrameworkSqlServer()
+             .AddDbContext<FastCutContext>();
             //services.AddScoped<>();
         }
     }

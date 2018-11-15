@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastCut.Infra", "FastCut.In
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastCut.Shared", "FastCut.Shared\FastCut.Shared.csproj", "{633931E9-7133-4DD0-BB9C-0A36D08DF04A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastCut.Api", "FastCut.Api\FastCut.Api.csproj", "{6B98EBB6-DEEE-40E7-9495-AD8CD04B1D62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastCut.Api", "FastCut.Api\FastCut.Api.csproj", "{6B98EBB6-DEEE-40E7-9495-AD8CD04B1D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastCut.Tests", "FastCut.Tests\FastCut.Tests.csproj", "{FEE595E3-E68E-4A91-83B0-F48E5EA466F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6B98EBB6-DEEE-40E7-9495-AD8CD04B1D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B98EBB6-DEEE-40E7-9495-AD8CD04B1D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B98EBB6-DEEE-40E7-9495-AD8CD04B1D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE595E3-E68E-4A91-83B0-F48E5EA466F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE595E3-E68E-4A91-83B0-F48E5EA466F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE595E3-E68E-4A91-83B0-F48E5EA466F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE595E3-E68E-4A91-83B0-F48E5EA466F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

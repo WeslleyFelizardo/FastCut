@@ -19,21 +19,26 @@ namespace FastCut.Infra.Datas
             {
                 Id = Guid.Parse("b0ed668d-7ef2-4a23-a333-94ad278f45d7"),
                 Name = "Salao1",
-                ConnectionString = "Server=(localdb)\\mssqllocaldb;Database=Salao1;Trusted_Connection=True;MultipleActiveResultSets=true"
+                ConnectionString = "Server=FELIZARDO\\WESLLEYSQL;Database=Salao1;Trusted_Connection=True;MultipleActiveResultSets=true"
             },
             new Tenant()
             {
                 Id = Guid.Parse("e7e73238-662f-4da2-b3a5-89f4abb87969"),
                 Name =  "Salao2",
-                ConnectionString = "Server=(localdb)\\mssqllocaldb;Database=Salao2;Trusted_Connection=True;MultipleActiveResultSets=true"
+                ConnectionString = "Server=FELIZARDO\\WESLLEYSQL;Database=Salao2;Trusted_Connection=True;MultipleActiveResultSets=true"
             },
             new Tenant()
             {
                 Id = Guid.NewGuid(),
                 Name =  "Salao3",
-                ConnectionString = "Server=(localdb)\\mssqllocaldb;Database=Salao3;Trusted_Connection=True;MultipleActiveResultSets=true"
+                ConnectionString = "Server=FELIZARDO\\WESLLEYSQL;Database=Salao3;Trusted_Connection=True;MultipleActiveResultSets=true"
             }
         };
+
+        public IList<Tenant> GetAllTenants()
+        {
+            return _tenants;
+        }
 
         public Tenant GetTenantById(string tenantId)
         {

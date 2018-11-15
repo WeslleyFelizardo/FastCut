@@ -10,7 +10,6 @@ namespace FastCut.Domain.Entities
         public DateTime Created { get; set; }
         public int IdServiceEmployee { get; set; }
         public ServiceEmployee ServiceEmployee { get; set; }
-        public int IdBooking { get; set; }
-        public Booking Booking { get; set; }
+       
     }
 }

@@ -1,4 +1,5 @@
-﻿using FastCut.Shared.Entities;
+﻿using FastCut.Domain.ValueObjects;
+using FastCut.Shared.Entities;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,19 +12,25 @@ namespace FastCut.Domain.Entities
     {
         private readonly IList<Service> _services;
 
-        public string Name { get; set; }
-        public DateTime? BrithDay { get; set; }
-        public string Address { get; set; }
-        public string Neighborhood { get; set; }
-        public string ZipCode { get; set; }
-        public string Country { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
+        public string Name { get; private set; }
+        public DateTime? BrithDay { get; private set; }
+        public Address Address { get; private set; }
+        public string Phone { get; private set; }
+        public Email Email { get; private set; }
 
         public virtual ICollection<Service> Services => _services.ToArray();
-        public Employee()
+        protected Employee()
         {
             _services = new List<Service>();
+        }
+
+        public Employee(string name, DateTime? brithDay, Address address, string phone, Email email)
+        {
+            Name = name;
+            BrithDay = brithDay;
+            Address = address;
+            Phone = phone;
+            Email = email;
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using FastCut.Domain.Entities;
+using FastCut.Domain.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -7,9 +9,15 @@ using System.Threading.Tasks;
 
 namespace FastCut.Api.Controllers
 {
-    [Authorize]
+  
     public class TestController : Controller
     {
+        private readonly IServiceRepository _serviceRepository;
+        public TestController(IServiceRepository serviceRepository)
+        {
+            _serviceRepository = serviceRepository;
+        }
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
@@ -19,9 +27,9 @@ namespace FastCut.Api.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public IActionResult Get(int id)
         {
-            return "value";
+            return Ok(_serviceRepository.GetAll());
         }
 
         // POST api/values

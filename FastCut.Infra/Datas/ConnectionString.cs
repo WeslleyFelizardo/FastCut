@@ -6,6 +6,6 @@ namespace FastCut.Infra.Datas
 {
     public class ConnectionString
     {
-        public string DefaultConnection { get; set; }
+        public string DefaultConnection { get; set; } = "Server=FELIZARDO\\WESLLEYSQL;Database=Salao1;Trusted_Connection=True;MultipleActiveResultSets=true";
     }
 }

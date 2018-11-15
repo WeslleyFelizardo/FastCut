@@ -8,5 +8,7 @@ namespace FastCut.Infra.Datas
     public interface IDatabaseManager
     {
         Tenant GetTenantById(string idTenant);
+
+        IList<Tenant> GetAllTenants();
     }
 }

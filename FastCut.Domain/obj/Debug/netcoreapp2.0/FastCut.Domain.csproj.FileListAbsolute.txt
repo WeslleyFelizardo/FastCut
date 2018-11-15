@@ -1,0 +1,12 @@
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\bin\Debug\netcoreapp2.0\FastCut.Domain.deps.json
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\bin\Debug\netcoreapp2.0\FastCut.Domain.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\bin\Debug\netcoreapp2.0\FastCut.Domain.pdb
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\bin\Debug\netcoreapp2.0\FastCut.Shared.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\bin\Debug\netcoreapp2.0\FastCut.Shared.pdb
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.0\FastCut.Domain.csprojAssemblyReference.cache
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.0\FastCut.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.0\FastCut.Domain.AssemblyInfoInputs.cache
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.0\FastCut.Domain.AssemblyInfo.cs
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.0\FastCut.Domain.csproj.CopyComplete
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.0\FastCut.Domain.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.0\FastCut.Domain.pdb
