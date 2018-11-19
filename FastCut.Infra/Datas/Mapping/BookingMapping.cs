@@ -15,6 +15,7 @@ namespace FastCut.Infra.Datas.Mapping
             builder.Property(b => b.Created);
             builder.Property(b => b.IdUser);
             builder.Property(b => b.UserName);
+            builder.Ignore(b => b.Notifications);
 
             builder.HasMany(b => b.RequestServices);
             

@@ -27,7 +27,12 @@ namespace FastCut.Infra.Repositories
 
         public T GetById(int id)
         {
-            throw new NotImplementedException();
+            return _dbSet.FirstOrDefault(x => x.Id == id);
+        }
+
+        public IEnumerable<T> GetByIds(int[] ids)
+        {
+            return _dbSet.Where(x => ids.Contains(x.Id));
         }
 
         public T Save(T entity)
@@ -39,9 +44,21 @@ namespace FastCut.Infra.Repositories
             return entity;
         }
 
-        public T Update(T Entity)
+        public T Update(T entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Update(entity);
+
+            _context.SaveChanges();
+
+            return entity;
+        }
+
+        public void Delete(T entity)
+        {
+            _dbSet.Remove(entity);
+
+            _context.SaveChanges();
+            
         }
     }
 }

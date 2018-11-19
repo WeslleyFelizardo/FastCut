@@ -14,6 +14,9 @@ namespace FastCut.Infra.Datas.Mapping
             builder.HasKey(se => new { se.ServiceId, se.EmployeeId });
             builder.HasOne(se => se.Employee);
             builder.HasOne(se => se.Service);
+            builder.HasMany(se => se.RequestServices);
+            builder.Ignore(se => se.Notifications);
+            builder.Ignore(se => se.Id);
         }
     }
 }

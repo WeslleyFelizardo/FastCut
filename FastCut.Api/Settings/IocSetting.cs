@@ -1,6 +1,9 @@
 ﻿
+using FastCut.Domain.EventBus;
+using FastCut.Domain.Handlers;
 using FastCut.Domain.Repositories;
 using FastCut.Infra.Datas;
+using FastCut.Infra.EventBus;
 using FastCut.Infra.Repositories;
 using FastCut.Shared.Repository;
 using Microsoft.AspNetCore.Http;
@@ -19,15 +22,22 @@ namespace FastCut.Api.Settings
         {
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+            // Repositories
+
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             services.AddScoped(typeof(IServiceRepository), typeof(ServiceRepository));
+
+            // Handlers
+
+            services.AddScoped(typeof(IEmployeeHandler), typeof(EmployeeHandler));
+            services.AddScoped(typeof(IServiceHandler), typeof(ServiceHandler));
+
+            services.AddScoped(typeof(IEventBus), typeof(EventBus));
 
             services.AddTransient<IDatabaseManager, DatabaseManager>();
             services.AddTransient<IContextFactory, ContextFactory>();
             
-            //services.AddScoped<IDbContext>(provider => provider.GetService<FastCutContext>());
 
-            //services.AddTransient<IUnitOfWork, UnitOfWork>();
         }
     }
 }

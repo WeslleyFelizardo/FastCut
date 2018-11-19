@@ -13,7 +13,8 @@ namespace FastCut.Infra.Datas.Mapping
         {
             builder.HasKey(rs => rs.Id);
             builder.Property(rs => rs.Created);
-            builder.HasOne(rs => rs.ServiceEmployee);
+            
+            builder.Ignore(rs => rs.Notifications);
         }
     }
 }

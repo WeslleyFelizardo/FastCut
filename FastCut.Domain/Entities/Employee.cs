@@ -10,24 +10,20 @@ namespace FastCut.Domain.Entities
 {
     public class Employee : Entity
     {
-        private readonly IList<Service> _services;
-
         public string Name { get; private set; }
-        public DateTime? BrithDay { get; private set; }
+        public DateTime? Brithdate { get; private set; }
         public Address Address { get; private set; }
         public string Phone { get; private set; }
         public Email Email { get; private set; }
 
-        public virtual ICollection<Service> Services => _services.ToArray();
         protected Employee()
         {
-            _services = new List<Service>();
         }
 
-        public Employee(string name, DateTime? brithDay, Address address, string phone, Email email)
+        public Employee(string name, DateTime? brithdate, string phone, Address address, Email email)
         {
             Name = name;
-            BrithDay = brithDay;
+            Brithdate = brithdate;
             Address = address;
             Phone = phone;
             Email = email;

@@ -14,10 +14,10 @@ namespace FastCut.Infra.Datas.Mapping
             builder.HasKey(s => s.Id);
             builder.Property(s => s.Name).HasMaxLength(100);
             builder.Property(s => s.Description).HasMaxLength(200);
-            builder.Property(s => s.Ativo);
-            builder.Property(s => s.Disponivel);
-
-            builder.HasMany(s => s.Employees);
+            builder.Property(s => s.Price).HasColumnType("money");
+            builder.Property(s => s.Active);
+            builder.Property(s => s.Available);
+            builder.Ignore(s => s.Notifications);
         }
     }
 }

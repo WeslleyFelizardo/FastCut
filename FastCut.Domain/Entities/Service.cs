@@ -8,19 +8,24 @@ namespace FastCut.Domain.Entities
 {
     public class Service : Entity
     {
-        private readonly IList<Employee> _employees;
+        public string Name { get; private set; }
+        public string Description { get; private set; }
+        public decimal Price { get; private set; }
+        public bool Active { get; private set; }
+        public bool Available { get; private set; }
 
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string Price { get; set; }
-        public bool Ativo { get; set; }
-        public bool Disponivel { get; set; }
-
-        public virtual ICollection<Employee> Employees => _employees.ToArray();
-
-        public Service()
+        protected Service()
         {
-            _employees = new List<Employee>();
+            
+        }
+
+        public Service(string name, string description, decimal price)
+        {
+            Name = name;
+            Description = description;
+            Price = price;
+            Active = true;
+            Available = true;
         }
     }
 }

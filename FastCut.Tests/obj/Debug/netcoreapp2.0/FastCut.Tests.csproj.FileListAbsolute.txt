@@ -7,7 +7,9 @@ D:\Projects\FastCut\api\FastCut\FastCut.Tests\bin\Debug\netcoreapp2.0\FastCut.Te
 D:\Projects\FastCut\api\FastCut\FastCut.Tests\bin\Debug\netcoreapp2.0\FastCut.Tests.dll
 D:\Projects\FastCut\api\FastCut\FastCut.Tests\bin\Debug\netcoreapp2.0\FastCut.Tests.pdb
 D:\Projects\FastCut\api\FastCut\FastCut.Tests\bin\Debug\netcoreapp2.0\FastCut.Domain.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Tests\bin\Debug\netcoreapp2.0\FastCut.Infra.dll
 D:\Projects\FastCut\api\FastCut\FastCut.Tests\bin\Debug\netcoreapp2.0\FastCut.Shared.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Tests\bin\Debug\netcoreapp2.0\FastCut.Infra.pdb
 D:\Projects\FastCut\api\FastCut\FastCut.Tests\bin\Debug\netcoreapp2.0\FastCut.Domain.pdb
 D:\Projects\FastCut\api\FastCut\FastCut.Tests\bin\Debug\netcoreapp2.0\FastCut.Shared.pdb
 D:\Projects\FastCut\api\FastCut\FastCut.Tests\obj\Debug\netcoreapp2.0\FastCut.Tests.csprojAssemblyReference.cache
