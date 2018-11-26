@@ -2,6 +2,7 @@
 using FastCut.Domain.Entities;
 using FastCut.Domain.Handlers;
 using FastCut.Shared.Repository;
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,12 @@ namespace FastCut.Api.Controllers
     {
         private readonly IEmployeeHandler _handler;
         private readonly IRepository<Employee> _repository;
+       
         public EmployeeController(IEmployeeHandler handler, IRepository<Employee> repository)
         {
             _handler = handler;
             _repository = repository;
+            
         }
 
         [HttpPost]

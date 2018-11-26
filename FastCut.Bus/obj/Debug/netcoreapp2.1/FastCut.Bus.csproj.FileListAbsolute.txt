@@ -1,0 +1,9 @@
+D:\Projects\FastCut\api\FastCut\FastCut.Bus\bin\Debug\netcoreapp2.1\FastCut.Bus.deps.json
+D:\Projects\FastCut\api\FastCut\FastCut.Bus\bin\Debug\netcoreapp2.1\FastCut.Bus.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Bus\bin\Debug\netcoreapp2.1\FastCut.Bus.pdb
+D:\Projects\FastCut\api\FastCut\FastCut.Bus\obj\Debug\netcoreapp2.1\FastCut.Bus.csproj.CoreCompileInputs.cache
+D:\Projects\FastCut\api\FastCut\FastCut.Bus\obj\Debug\netcoreapp2.1\FastCut.Bus.AssemblyInfoInputs.cache
+D:\Projects\FastCut\api\FastCut\FastCut.Bus\obj\Debug\netcoreapp2.1\FastCut.Bus.AssemblyInfo.cs
+D:\Projects\FastCut\api\FastCut\FastCut.Bus\obj\Debug\netcoreapp2.1\FastCut.Bus.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Bus\obj\Debug\netcoreapp2.1\FastCut.Bus.pdb
+D:\Projects\FastCut\api\FastCut\FastCut.Bus\obj\Debug\netcoreapp2.1\FastCut.Bus.csprojAssemblyReference.cache

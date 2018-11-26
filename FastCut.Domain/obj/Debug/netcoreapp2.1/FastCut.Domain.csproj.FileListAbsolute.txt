@@ -10,3 +10,5 @@ D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.1\FastCut.D
 D:\Projects\FastCut\api\FastCut\FastCut.Domain\bin\Debug\netcoreapp2.1\FastCut.Shared.dll
 D:\Projects\FastCut\api\FastCut\FastCut.Domain\bin\Debug\netcoreapp2.1\FastCut.Shared.pdb
 D:\Projects\FastCut\api\FastCut\FastCut.Domain\obj\Debug\netcoreapp2.1\FastCut.Domain.csproj.CopyComplete
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\bin\Debug\netcoreapp2.1\FastCut.Bus.dll
+D:\Projects\FastCut\api\FastCut\FastCut.Domain\bin\Debug\netcoreapp2.1\FastCut.Bus.pdb

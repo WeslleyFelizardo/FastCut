@@ -1,17 +1,14 @@
-﻿using FastCut.Domain.Commands.Employee;
+﻿using Bus.Commands;
+using FastCut.Bus;
+using FastCut.Domain.Commands.Employee;
 using FastCut.Domain.Commands.ServiceEmployee;
 using FastCut.Domain.Entities;
-using FastCut.Domain.EventBus;
-using FastCut.Domain.EventBus.Events;
 using FastCut.Domain.ValueObjects;
 using FastCut.Domain.ViewModels;
 using FastCut.Shared.Commands;
 using FastCut.Shared.Repository;
 using Flunt.Notifications;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace FastCut.Domain.Handlers
 {
@@ -22,6 +19,7 @@ namespace FastCut.Domain.Handlers
         private readonly IRepository<Service> _serviceRepository;
         private readonly IRepository<ServiceEmployee> _serviceEmployeeRepository;
         private readonly IEventBus _eventBus;
+  
         public EmployeeHandler(
             IRepository<Employee> employeeRepository, 
             IRepository<Service> serviceRepository, 
@@ -46,8 +44,8 @@ namespace FastCut.Domain.Handlers
 
             var employeeCreated = _employeeRepository.Save(employee);
 
-            // Emitir para a fila a criação do employee e registrar o usuário na no identity provider
-            _eventBus.Publish(new CreatedEmployeeEvent(employee.Email.Address, command.Password, employeeCreated.Id));
+            // Emitir para a fila a criação do employee e registrar o usuário la no identity provider
+            _eventBus.Send(new CreatedEmployeeCommandEvent(employee.Email.Address, command.Password, employeeCreated.Id, employeeCreated.Name), "queue_created_employee");
 
             return new CommandResult(true, "Funcionário criado com sucesso", new EmployeeCreatedViewModel(employeeCreated.Id, employeeCreated.Name), Notifications);
         }
