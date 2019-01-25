@@ -10,5 +10,7 @@ namespace FastCut.Bus
         Task Publish<T>(T @event) where T : IntegrationEvent;
 
         Task Send<T>(T command, string queue) where T : CommandEvent;
+        
+        Task Send<T>(IList<T> command, string queue) where T : CommandEvent;
     }
 }

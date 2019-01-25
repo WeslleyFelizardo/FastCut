@@ -17,7 +17,7 @@ namespace FastCut.Domain.Handlers
         {
             _repository = repository;
         }
-        public ICommandResult Handler(CreateServiceCommand command)
+        public IResult Handler(CreateServiceCommand command)
         {
             var service = new Service(command.Name, command.Description, command.Price);
 
@@ -31,7 +31,7 @@ namespace FastCut.Domain.Handlers
             return new CommandResult(true, "Dados salvo com sucesso", new ServiceCreatedViewModel(serviceCreated.Id, service.Name), Notifications);
         }
 
-        public ICommandResult Handler(UpdateServiceCommand command)
+        public IResult Handler(UpdateServiceCommand command)
         {
             var service = new Service(command.Name, command.Description, command.Price);
 
@@ -46,7 +46,7 @@ namespace FastCut.Domain.Handlers
 
         }
 
-        public ICommandResult Handler(DeleteServiceCommand command)
+        public IResult Handler(DeleteServiceCommand command)
         {
             var service = _repository.GetById(command.Id);
 

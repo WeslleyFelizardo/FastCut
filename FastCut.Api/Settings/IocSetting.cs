@@ -36,6 +36,7 @@ namespace FastCut.Api.Settings
 
             services.AddScoped(typeof(IEmployeeHandler), typeof(EmployeeHandler));
             services.AddScoped(typeof(IServiceHandler), typeof(ServiceHandler));
+            services.AddScoped(typeof(IHairSalonHandler), typeof(HairSalonHandler));
 
             services.AddScoped(typeof(IEventBus), typeof(EventBus));
 

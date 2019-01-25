@@ -6,7 +6,7 @@ using System.Text;
 
 namespace FastCut.Shared.Commands
 {
-    public class CommandResult : ICommandResult
+    public class CommandResult : IResult
     {
         public CommandResult(bool success, string message, IViewModel data, IReadOnlyCollection<Notification> notifications)
         {
@@ -18,7 +18,7 @@ namespace FastCut.Shared.Commands
 
         public bool Success { get; set; }
         public string Message { get; set; }
-        public IViewModel Data { get; set; }
+        public IViewModel Data { get; private set; }
         public IReadOnlyCollection<Notification> Notifications { get; set; }
     }
 }

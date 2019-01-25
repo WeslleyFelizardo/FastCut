@@ -6,6 +6,6 @@ namespace FastCut.Shared.Commands
 {
     public interface IHandlerList<T> where T : ICommand
     {
-        ICommandResult Handler(List<T> command);
+        IResult Handler(List<T> command);
     }
 }

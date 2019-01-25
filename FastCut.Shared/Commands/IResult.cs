@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FastCut.Shared.Commands
 {
-    public interface ICommandResult
+    public interface IResult
     {
     }
 }

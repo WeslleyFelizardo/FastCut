@@ -30,5 +30,13 @@ namespace FastCut.Bus
 
             await endPoint.Send<T>(command);
         }
+
+        public async Task Send<T>(IList<T> command, string queue) where T : CommandEvent
+        {
+            var sendToUri = new Uri($"{"rabbitmq://localhost/"}{queue}");
+            var endPoint = await _bus.GetSendEndpoint(sendToUri);
+
+            await endPoint.Send<IList<T>>(command);
+        }
     }
 }

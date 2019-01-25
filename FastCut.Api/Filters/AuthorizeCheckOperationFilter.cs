@@ -24,7 +24,7 @@ namespace FastCut.Api.Filters
 
                 operation.Security = new List<IDictionary<string, IEnumerable<string>>>
                 {
-                    new Dictionary<string, IEnumerable<string>> {{"oauth2", new[] { "fastcut_api" } }}
+                    new Dictionary<string, IEnumerable<string>> {{"oauth2", new[] { "access_admin" } }}
                 };
             }
         }

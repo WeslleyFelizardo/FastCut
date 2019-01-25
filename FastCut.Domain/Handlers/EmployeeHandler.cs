@@ -33,7 +33,7 @@ namespace FastCut.Domain.Handlers
             _eventBus = eventBus;
         }
 
-        public ICommandResult Handler(CreateEmployeeCommand command)
+        public IResult Handler(CreateEmployeeCommand command)
         {
             var employee = new Employee(command.Name, command.Brithdate, command.Phone, new Address(command.City, command.Neighborhood, command.ZipCode, command.Country, command.Street, command.State), new Email(command.Address));
 
@@ -50,7 +50,7 @@ namespace FastCut.Domain.Handlers
             return new CommandResult(true, "Funcionário criado com sucesso", new EmployeeCreatedViewModel(employeeCreated.Id, employeeCreated.Name), Notifications);
         }
 
-        public ICommandResult Handler(UpdateEmployeeCommand command)
+        public IResult Handler(UpdateEmployeeCommand command)
         {
             var employee = new Employee(command.Name, command.Brithdate, command.Phone, new Address(command.City, command.Neighborhood, command.ZipCode, command.Country, command.Street, command.State), new Email(command.Address));
 
@@ -64,7 +64,7 @@ namespace FastCut.Domain.Handlers
             return new CommandResult(true, "Funcionário atualizado com sucesso", new EmployeeUpdatedViewModel(employeeCreated.Id, employeeCreated.Name), Notifications);
         }
 
-        public ICommandResult Handler(DeleteEmployeeCommand command)
+        public IResult Handler(DeleteEmployeeCommand command)
         {
             var employee = _employeeRepository.GetById(command.Id);
 
@@ -76,7 +76,7 @@ namespace FastCut.Domain.Handlers
             return new CommandResult(true, "Funcionário excluído com sucesso", null, Notifications);
         }
 
-        public ICommandResult Handler(CreateAssociationCommand command)
+        public IResult Handler(CreateAssociationCommand command)
         {
             command.Validate();
 

@@ -22,7 +22,7 @@ namespace FastCut.Api.Settings
             app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-                options.RoutePrefix = string.Empty;
+                options.RoutePrefix = "api-docs";
 
                 options.OAuthClientId("fastcut_api_swagger");
                 options.OAuthAppName("FastCut API - Swagger"); // presentation purposes only
@@ -41,13 +41,13 @@ namespace FastCut.Api.Settings
 
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new Info { Title = "Protected API", Version = "v1" });
+                options.SwaggerDoc("v1", new Info { Title = "FastCut API", Version = "v1" });
 
                 options.AddSecurityDefinition("oauth2", new OAuth2Scheme
                 {
                     Flow = "implicit", // just get token via browser (suitable for swagger SPA)
                     AuthorizationUrl = "http://localhost:61618/connect/authorize",
-                    Scopes = new Dictionary<string, string> { { "fastcut_api", "FastCut API - full access" } , { "node_api", "Api em Node" } },
+                    Scopes = new Dictionary<string, string> { { "access_admin", "Acesso FastCut Api Administrador" } },
 
 
                 });
